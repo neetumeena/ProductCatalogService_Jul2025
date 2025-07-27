@@ -9,17 +9,35 @@ import org.springframework.web.bind.annotation.*;
 public class ProductController {
 
     @GetMapping("/products/{id}")
-    public Product getProductDetails(@PathVariable Long id){
+    public Product getProductDetails(@PathVariable Long id) {
         Product product = new Product();
         product.setId(id);
         product.setName("Iphone 15");
         return product;
     }
-    @PatchMapping("/products/{id}")
-    public ProductDto updateProduct(@PathVariable Long id, @RequestBody ProductDto productDto){
 
+    @PatchMapping("/products/{id}")
+    public ProductDto updateProduct(@PathVariable Long id, @RequestBody ProductDto productDto) {
+        return null;
     }
-    // getAllproduct
-    //Delete product
+
+    @PostMapping("/products/create")
+    public ProductDto createProduct(@RequestBody ProductDto productDto) {
+        return null;
+    }
+
+    @GetMapping("/products")
+    public ProductDto createProduct() {
+        return null;
+    }
+
+    @DeleteMapping("/products/{id}")
+    public ProductDto deleteProduct(@PathVariable Long id) {
+        return null;
+    }
+    @PutMapping("/products/{id}")
+    public ProductDto putProduct(@PathVariable Long id) {
+        return null;
+    }
 
 }
