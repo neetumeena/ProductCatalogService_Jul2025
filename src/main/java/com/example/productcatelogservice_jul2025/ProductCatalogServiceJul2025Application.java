@@ -8,6 +8,7 @@ public class ProductCatalogServiceJul2025Application {
 
     public static void main(String[] args) {
         SpringApplication.run(ProductCatalogServiceJul2025Application.class, args);
+
     }
 
 }
